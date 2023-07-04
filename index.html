@@ -1,0 +1,53 @@
+<!---Task 01  Product landing page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product landing page </title>
+</head>
+<body>
+    <section> 
+        <div class="circle"> </div>
+    <header>
+       <a href="#" class="logo"><img src="image\logo1.png"></a>
+
+       <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">product</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h1><span> Hello guys </span> &#128522;</h1>
+         <h3>Are you ready to <span>lead </span>the way?</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga officiis sequi, voluptatibus facilis porro deserunt. Possimus quisquam rerum, nulla similique adipisci atque maiores, id nemo minus, voluptas vitae eligendi fugiat!</p>
+         <a href="#">Buy Now</a>
+        </div>
+        <div class="imgBox">
+            <img src="shoes.png" class="adidas">
+        </div>
+    </div>
+        <ul class="shoes">
+            <li><img src="shoes.png" onclick="imgSlider('img.png');  changecirclecolor('#84206c')"></li>
+            <li><img src="shoes2.png" onclick="imgSlider('img2.png'); changecirclecolor('hsl(57, 97%, 49%)')"></li>
+          <!-----  <li><img src="image\whiteshoes.png" onclick="imgSlider('image\shoes.png');  changecirclecolor('rgb(0,0,255)')"></li>-->
+            <li><img src="shoes3.png" onclick="imgSlider('img3.png');  changecirclecolor('hsl(87, 97%, 49%)')"></li>
+            <li><img src="shoes5.png" onclick= "imgSlider('img5.png');  changecirclecolor('hsl(0, 15%, 67%)')"></li>
+        </ul>
+      </section>    
+      <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.adidas').src= anything;
+        }
+        function changecirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+      </script>      
+</body>
+</html>
